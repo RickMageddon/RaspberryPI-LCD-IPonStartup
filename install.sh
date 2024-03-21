@@ -1,33 +1,30 @@
 #!/bin/bash
 
-# Check if Git is already installed
-if ! command -v git &> /dev/null; then
-    echo "Git is not installed. Installing..."
+
+# Check if Python 3 is already installed
+if ! command -v python3 &> /dev/null; then
+    echo "Python 3 is not installed. Installing..."
     
     # Installation command based on package manager
     if [ -x "$(command -v apt-get)" ]; then
         sudo apt-get update
-        sudo apt-get install -y git
+        sudo apt-get install -y python3
     elif [ -x "$(command -v yum)" ]; then
-        sudo yum install -y git
+        sudo yum install -y python3
     elif [ -x "$(command -v dnf)" ]; then
-        sudo dnf install -y git
+        sudo dnf install -y python3
     elif [ -x "$(command -v pacman)" ]; then
-        sudo pacman -Sy --noconfirm git
+        sudo pacman -Sy --noconfirm python3
     else
-        echo "Error: Your package manager is not supported. Please install Git manually."
+        echo "Error: Your package manager is not supported. Please install Python 3 manually."
         exit 1
     fi
 
-    echo "Git has been successfully installed."
+    echo "Python 3 has been successfully installed."
 else
-    echo "Git is already installed."
+    echo "Python 3 is already installed."
 fi
 
-#Cloning repo
-cd /home/${USER}/
-git clone https://github.com/RickMageddon/RPI-IP-LCD-STARTUP
-cd lcd/
 
 sudo ./install.sh
 

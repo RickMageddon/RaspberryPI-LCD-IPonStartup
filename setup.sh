@@ -164,6 +164,22 @@ fi
 
 message "Enabling I2C on boot." 'INFO'; i2c_boot_config
 
+###########################################################################
+#DOING THE REST OF THE SETUP TO HAVE EVERYTHING WORK
+############################################################
+mv /lcd/TimeAndIP.service /etc/systemd/system
+mv /lcd/TimeAndIP.py /bin
+
+sudo chmod +x /bin/TimeAndIP.py
+sudo chmod 644 /etc/systemd/system/TimeAndIP.service
+
+systemctl daemon-reload
+systemctl enable TimeAndIP.service
+
+#################################################################################
+
+
+
 echo "#################################################################"
 echo "# All finished! Press any key to REBOOT now or Ctrl+c to abort. #"
 echo "#################################################################"
