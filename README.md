@@ -11,53 +11,61 @@ Using this script, you can quickly set up a small display that provides essentia
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* For Linux and Microcontrollers
+
+### Parts
+
+* LCD1602 (with i2C backpack)
+* Microcontroller
+
+### Wiring
+
+* (i2C BP) GND -> GND (Microcontroller)
+* (i2C BP) VCC -> 5V (Microcontroller)
+* (i2C BP) SDA -> SDA(0 or 1) (Microcontroller)
+* (i2C BP) SCL -> SCL(0 or 1) (Microcontroller)
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
 
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
+Install Git
 ```
-code blocks for commands
+sudo apt install git
 ```
 
-## Help
+Go to root folder
+```
+cd /
+```
 
-Any advise for common problems or issues.
+Copy repository
 ```
-command to run if program contains helper info
+git clone https://github.com/RickMageddon/RaspberryPI-LCD-IPonStartup
 ```
+
+Run script
+```
+sudo bash install.sh
+```
+
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. Rick Mageddon  
+ex. [@Rick_Mageddon](https://twitter.com/Rick_Mageddon)
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+
+* [the-raspberry-pi-guy](https://github.com/the-raspberry-pi-guy/lcd)
