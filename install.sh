@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+echo "Starting script made by Rick Mageddon"
 # Check if Python 3 is already installed
 if ! command -v python3 &> /dev/null; then
     echo "Python 3 is not installed. Installing..."
@@ -25,8 +25,6 @@ else
     echo "Python 3 is already installed."
 fi
 
-
-sudo ./install.sh
 
 # POSIX script to call setup.sh with the correct interpreter
 # Created to maintain compatibility with the video tutorial and descriptions
