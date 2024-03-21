@@ -1,0 +1,12 @@
+[Unit]
+Description=Runs the TimeAndIP.py script on startup as an service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /bin/TimeAndIP.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
