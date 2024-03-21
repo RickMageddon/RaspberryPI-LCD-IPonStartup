@@ -28,7 +28,7 @@ Using this script, you can quickly set up a small display that provides essentia
 ### Installing
 
 
-Install Git
+Install Git (If not installed)
 ```terminal
 sudo apt install git
 ```
