@@ -29,22 +29,25 @@ Using this script, you can quickly set up a small display that provides essentia
 
 
 Install Git
-```
+```terminal
 sudo apt install git
 ```
 
+
 Go to root folder
-```
+```terminal
 cd /
 ```
 
+
 Copy repository
-```
+```terminal
 git clone https://github.com/RickMageddon/RaspberryPI-LCD-IPonStartup
 ```
 
+
 Run script
-```
+```terminal
 sudo bash install.sh
 ```
 
