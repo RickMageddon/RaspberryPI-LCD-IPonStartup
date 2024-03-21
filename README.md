@@ -1,4 +1,4 @@
-# RaspberryPI - Show IP on LCD on startup
+# RaspberryPI - Show IP and Time on LCD on startup
 
 
 ## Description
