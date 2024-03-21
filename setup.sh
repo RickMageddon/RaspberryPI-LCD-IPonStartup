@@ -180,7 +180,8 @@ systemctl enable TimeAndIP.service
 #################################################################################
 
 
-
+echo "#################################################################"
+echo "#   Thank you for using this script provided by Rick Mageddon   #"
 echo "#################################################################"
 echo "# All finished! Press any key to REBOOT now or Ctrl+c to abort. #"
 echo "#################################################################"

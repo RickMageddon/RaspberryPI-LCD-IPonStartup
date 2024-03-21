@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Starting script made by Rick Mageddon"
+echo "--===Starting script made by Rick Mageddon==---"
 # Check if Python 3 is already installed
 if ! command -v python3 &> /dev/null; then
     echo "Python 3 is not installed. Installing..."
@@ -44,5 +44,5 @@ fi
 if [ "$(id -u)" != "0" ]; then echo "Please re-run as sudo."; exit 1; fi
 
 # execute the installation script using interpreter in the shebang
-./setup.sh
+sudo bash ./setup.sh
 
